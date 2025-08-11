@@ -6,12 +6,12 @@ This repository includes the smart contracts, tests, and results of the gas cons
 
 This project demonstrates how DAO organizational models specified using the DAO-ML modeling language can be automatically translated into Solidity smart contracts using an optimized, model-driven approach. The project includes:
 
-    - Generated smart contracts representing various DAO governance roles and committees that meet the specififcations of the Travelware case study, concerning a destination management system based on two DAOs. 
+- Generated smart contracts representing various DAO governance roles and committees that meet the specifications of the Travelware case study, concerning a destination management system based on two DAOs. 
 
-    - A simulation DAO to validate permission assignment and role revocation and assingment in the context of a DAO with few roles (3)and permission (6) assignments. 
+- A simulation DAO to validate permission assignment and role revocation and assignment in the context of a DAO with few roles (3) and permission (6) assignments. 
 
-    - The gas consumption analysis compares the contracts generated using DAO-ML with the Aragon PermissionManager contracts, for which we refer the reader to the repository at this : [link](https://github.com/SoweluAvanzo/Aragon-PermissionManager-gas-cost-analysis).
+- The gas consumption analysis compares the contracts generated using DAO-ML with the Aragon PermissionManager contracts, for which we refer the reader to the repository at this [link](https://github.com/SoweluAvanzo/Aragon-PermissionManager-gas-cost-analysis).
 
-    🔍 Gas reporting for the DAO-ML smart contracts is conducted via hardhat-gas-reporter. The Gas Consumption Analysis Results folder includes data concerning the gas consumption analysis of both the DAO-ML DAOs tested (gas-report_DAO_ML.txt) and the Aragon PermissionManager contracts (average-gas-used-by-description_Aragon.xlsx) for the users to compare the two approaches.
-    
+🔍 Gas reporting for the DAO-ML smart contracts is conducted via **hardhat-gas-reporter**. The **Gas Consumption Analysis Results** folder includes data concerning the gas consumption analysis of both the DAO-ML DAOs tested (`gas-report_DAO_ML.txt`) and the Aragon PermissionManager contracts (`average-gas-used-by-description_Aragon.xlsx`) for users to compare the two approaches.
+
 The analysis demonstrates how DAO-ML supports scalable smart contract deployment while preserving transparency and access control guarantees.
