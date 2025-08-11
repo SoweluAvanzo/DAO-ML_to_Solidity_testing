@@ -42,7 +42,7 @@ contract Travelhive_DAO is IPermissionManager {
 
             require(
                 ( // the new role must be a valid one
-                    index_new_role < 14 // checking for "index out of bounds"
+                    index_new_role < 14 // checking for index out of bounds
                 )
                 && ( // "check the sender and target user control relation"
                     (allowNullRole_user && (user_role_id == 0)) || // allow to add role if the user doesn't have one
@@ -62,10 +62,6 @@ contract Travelhive_DAO is IPermissionManager {
                 , "the given controller can't perform the given operation on the given controlled one" );
             _;
         }
-        
-
-
- 
     modifier hasPermission(address _executor, uint32 _permissionIndex) {
         require(role_permissions[uint32(roles[_executor] & 31)] & (uint32(1) << _permissionIndex) != 0, "User does not have this permission");
         _;
